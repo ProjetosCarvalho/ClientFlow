@@ -1,0 +1,100 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <div class="text-center topo">
+        <div class="space"></div>
+        <h1 class="display-4">Bem-vinda, Giovanna!</h1>
+        <p>ClientFlow: o seu sistema de controle de clientes</p>
+        <div class="space"></div>
+    </div>
+    <section id="about" class="about-mf sect-pt4 route">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="box-shadow-full">
+                    <div class="row">
+                        <div class="centralizar">
+                            <Strong>
+                                <p class="logado">
+                                    Conta logada com sucesso
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" color="lightgreen" class="bi bi-check" viewBox="0 0 16 16">
+                                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                                    </svg>
+                                </p>
+                            </Strong>
+                            <div class="avatar">
+                                <img class="centralizar" src="Giovanna.jpg" alt="Imagem de Perfil">
+                            </div>
+                            <div>
+                                <p><span class="title-s">Nome: </span> <span>Giovanna Carvalho</span></p>
+                                <p><span class="title-s">Email pessoal: </span> <span>gi.carvalho.s23@gmail.com</span></p>
+                                <p><span class="title-s">Contato pessoal: </span> <span>+55 (11) 96634-8763</span></p>
+                                <p><span class="title-s">Nome da empresa: </span> <span>HelloDev</span></p>
+                                <p><span class="title-s">Local da empresa: </span> <span>Ribeirão Pires, SP</span></p>
+                                <p><span class="title-s">Email empresarial: </span> <span>hellodev@gmail.com</span></p>
+                                <p><span class="title-s">Contato empresarial: </span> <span>+55 (11) 96634-8763</span></p>
+                                <button class="botao-carrinho bnt-sobre" src="">Perfil completo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="box-shadow-full">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="about-me pt-4 pt-md-0">
+                                <div class="title-box-2">
+                                    <h5 class="title-left">
+                                        Sobre
+                                    </h5>
+                                </div>
+                                <p class="lead">
+                                    Bem-vindo ao ClientFlow! Aqui, acreditamos que a administração dos seus clientes pode ser fácil e divertida. Se você é dono do seu próprio negócio e quer simplificar o controle dos seus clientes, encontrou o lugar certo!
+                                </p>
+                                <p class="lead">
+                                    Imagine ter todas as informações dos seus clientes ao alcance de um clique. Com o ClientFlow, você pode cadastrar novos clientes, atualizar suas informações e excluí-las de forma rápida e fácil. 
+                                    Esqueça as planilhas confusas e os arquivos perdidos. Está tudo organizado em um só lugar!
+                                </p>
+                                <p class="lead">
+                                    E sabe qual é a melhor parte? O ClientFlow é totalmente gratuito! Sim, você leu certo. Não cobramos nada pelo nosso serviço, porque acreditamos que todo empreendedor merece ter acesso a uma ferramenta eficiente para 
+                                    administrar seus clientes, independentemente do tamanho do seu negócio.
+                                </p>
+                                <p class="lead">
+                                    E o melhor de tudo é que você pode começar agora mesmo. Basta fazer login no nosso site e você estará pronto para aproveitar todas as funcionalidades que o ClientFlow oferece. Não precisa ser um expert em tecnologia, 
+                                    nosso sistema foi desenvolvido para ser simples e fácil de usar.
+                                </p>
+                                <p class="lead">
+                                    Então, não perca mais tempo se preocupando com a gestão dos seus clientes. Deixe o ClientFlow cuidar disso para você, enquanto você foca no que realmente importa: o crescimento do seu negócio. 
+                                    Junte-se a nós e descubra como é fácil ter o controle total dos seus clientes. Estamos ansiosos para te receber de braços abertos no ClientFlow!
+                                </p>
+                                <img class="centralizar img-control" src="Controle-clientes.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container-contato">
+        <h5 class="title-left">Entre em Contato</h5>
+        <p class="margem">Fale com nossos desenvolvedores! Se você tiver alguma pergunta, comentário ou solicitação, não hesite em entrar em contato conosco.</p>
+        <form class="form-contato">
+            <label class="label-contato" for="nome">Nome:</label>
+            <input class="input-contato" type="text" id="nome" name="nome" placeholder="Seu Nome">
+
+            <label class="label-contato" for="email">Email:</label>
+            <input class="input-contato" type="email" id="email" name="email" placeholder="Seu Email">
+
+            <label class="label-contato" for="mensagem">Mensagem:</label>
+            <textarea class="textarea-contato" id="mensagem" name="mensagem" placeholder="Sua Mensagem"></textarea>
+
+            <button class="botao-carrinho bnt-sobre" type="submit" id="enviarBotao" onclick="enviarMensagem()">Enviar</button>
+
+        </form>
+    </div>
+</div>
+

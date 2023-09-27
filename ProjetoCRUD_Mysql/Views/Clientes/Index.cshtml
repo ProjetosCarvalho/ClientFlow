@@ -1,0 +1,48 @@
+﻿@model IEnumerable<ProjetoCRUD_Mysql.Models.Cliente>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-center margem">Seus clientes</h1>
+
+<p class="text-center margem">
+    <button type="button" class="btn btn-secondary"><a asp-action="Create">Novo cliente</a></button>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefone)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefone)
+            </td>
+            <td>
+                    <button type="button" class="btn btn-primary"><a asp-action="Details" asp-route-id="@item.Id">Acessar</a></button>
+                    <button type="button" class="btn btn-warning"><a asp-action="Edit" asp-route-id="@item.Id">Editar</a></button>
+                    <button type="button" class="btn btn-danger"><a asp-action="Delete" asp-route-id="@item.Id">Deletar</a></button>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
